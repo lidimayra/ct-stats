@@ -6,7 +6,7 @@ Created on Sun May 22 20:43:24 2016
 """
 
 from math import floor, ceil
-from frequencias import carregarLista, frequencia_abs, universo_amostral, frequencia_acumulada
+from frequencias import frequencia_abs, universo_amostral, frequencia_acumulada
 
 def media(lista):
     xifi = frequencia_abs(lista)    
@@ -37,11 +37,3 @@ def mediana(lista):
 def moda(lista):
     xifi = frequencia_abs(lista)
     return max(xifi, key=xifi.get)
-
-arquivo = 'pesos.txt'
-
-lista = carregarLista(arquivo)
-# lista.append(76)
-print media(lista)
-print(mediana(lista))
-print(moda(lista))
