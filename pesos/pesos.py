@@ -50,13 +50,3 @@ def frequencia_acumulada_rel(lista):
     for xi, fac in frequencias.iteritems():
         frequencias[xi] = float(fac) / universo_amostral(lista) * 100
     return frequencias
-
-arquivo = 'pesos.txt'
-
-lista = carregarLista(arquivo)
-print lista
-print "Universo Amostral:", universo_amostral(lista)
-print "Fi de 70:", frequencia_abs(lista)[70]
-print "Fr de 85:", frequencia_rel(lista)[85]
-print "Fac de 98:", frequencia_acumulada(lista)[98]
-print "Frac de 98:", frequencia_acumulada_rel(lista)[98]
